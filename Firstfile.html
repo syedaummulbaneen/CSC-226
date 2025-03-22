@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Your styling in here -->
+    <style>
+        /* Style for the input */
+        #userInput {
+            width: 50%;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        /* Style for the button */
+        #submitButton {
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+
+    <!-- Your function in here -->
+    <script type="text/javascript">
+        function handleClick() {
+            // Get the value from the input field
+            var userInput = document.getElementById('userInput').value;
+
+            // Show the user input in an alert box
+            alert("You entered: " + userInput);
+
+            // Change the background color of the input field
+            document.getElementById('userInput').style.backgroundColor = "lightblue";
+        }
+    </script>
+</head>
+<body>
+    <!-- Your HTML elements here -->
+    <h1>Enter Something Below</h1>
+    <input type="text" id="userInput" placeholder="Type something here...">
+    <br><br>
+    <button id="submitButton" onclick="handleClick()">Submit</button>
+</body>
+</html>
